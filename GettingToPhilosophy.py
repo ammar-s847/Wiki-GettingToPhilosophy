@@ -14,7 +14,6 @@ def isInParentheses(htmlCode, index):
 			return False
 	return False
 
-
 def getFirstLink(htmlCode): 
 	# Returns the first link in the main content
 	# The below code uses indices instead of bs4's find function
@@ -33,7 +32,6 @@ def getFirstLink(htmlCode):
 				indexOfLink = mainCode.index(link['href'])
 				if not isInParentheses(mainCode, indexOfLink):
 					return link.attrs
-
 	return None
 
 startID = 'mw-content-text'	# Id of the start of the main content
